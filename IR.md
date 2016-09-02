@@ -27,6 +27,10 @@ m <- leaflet() %>%
   addMarkers(lng=-76.954220, lat=39.004796, popup="University System of Maryland")
 m  # Print the map
 ```
+![alt text](https://raw.githubusercontent.com/nietsnel/nietsnel.github.io/master/IR_files/figure-markdown_github/unnamed-chunk-3-3.png "Logo Title Text 1")
+
+[logo]: https://raw.githubusercontent.com/nietsnel/nietsnel.github.io/master/IR_files/figure-markdown_github/unnamed-chunk-3-3.png "Logo Title Text 2"
+
 
 Graphic here.
 
