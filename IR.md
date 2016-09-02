@@ -17,6 +17,8 @@ Jordan Prendez
 Points
 ------
 
+Named points on a map. 
+
 ``` r
 library(leaflet)
 library(webshot)
