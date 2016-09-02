@@ -1,3 +1,10 @@
+---
+layout: page
+title: IR
+permalink: /IR/
+---
+
+
 R for institutional research
 ================
 Jordan Prendez
