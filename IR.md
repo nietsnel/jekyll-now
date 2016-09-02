@@ -1,10 +1,3 @@
----
-layout: page
-title: IR
-permalink: /IR/
-published: true
----
-
 R for institutional research
 ================
 Jordan Prendez
@@ -17,7 +10,7 @@ Jordan Prendez
 Points
 ------
 
-Named points on a map. 
+Points about points
 
 ``` r
 library(leaflet)
@@ -29,70 +22,15 @@ m <- leaflet() %>%
   addMarkers(lng=-76.954220, lat=39.004796, popup="University System of Maryland")
 m  # Print the map
 ```
-![alt text](https://raw.githubusercontent.com/nietsnel/nietsnel.github.io/master/IR_files/figure-markdown_github/unnamed-chunk-3-3.png "Logo Title Text 1")
 
-[logo]: https://raw.githubusercontent.com/nietsnel/nietsnel.github.io/master/IR_files/figure-markdown_github/unnamed-chunk-3-3.png "Logo Title Text 2"
-
+COMING SOON!
 
 Graphic here.
 
 Statewide level
 ---------------
 
-``` r
-us <- map_data("state")
-arr <- as_data_frame(USArrests) %>% 
-  rownames_to_column("region") %>% 
-  mutate(region=tolower(region)) %>%
-  rename(Enrollment = Murder)
-
-gg <- ggplot()
-gg <- gg + geom_map(data=us, map=us,
-                    aes(x=long, y=lat, map_id=region),
-                    fill="#ffffff", color="#ffffff", size=0.15)
-gg <- gg + geom_map(data=arr, map=us,
-                    aes(fill=Enrollment, map_id=region),
-                    color="#ffffff", size=0.15)
-gg <- gg + scale_fill_continuous(low='thistle2', high='darkgreen', 
-                                 guide='colorbar')
-gg <- gg + labs(x=NULL, y=NULL)
-gg <- gg + coord_map("albers", lat0 = 39, lat1 = 45) 
-gg <- gg + theme(panel.border = element_blank())
-gg <- gg + theme(panel.background = element_blank())
-gg <- gg + theme(axis.ticks = element_blank())
-gg1 <- gg + theme(axis.text = element_blank()) + ggtitle("First student location")
-
-
-##second graph..[almost same code. Different dataset, different color]
-
-us <- map_data("state")
-arr <- as_data_frame(USArrests) %>% ##This is a vis for demonstration only. 
-  rownames_to_column("region") %>%  ##The dataset is on violent crime and is not related to IR.
-  mutate(region=tolower(region)) %>%
-  rename(Enrollment = Murder) %>%
-  mutate(Enrollment=Enrollment+Rape)  
-
-gg <- ggplot()
-gg <- gg + geom_map(data=us, map=us,
-                    aes(x=long, y=lat, map_id=region),
-                    fill="#ffffff", color="#ffffff", size=0.15)
-gg <- gg + geom_map(data=arr, map=us,
-                    aes(fill=Enrollment, map_id=region),
-                    color="#ffffff", size=0.15)
-gg <- gg + scale_fill_continuous(low='thistle2', high='darkgreen', 
-                                 guide='colorbar')
-gg <- gg + labs(x=NULL, y=NULL)
-gg <- gg + coord_map("albers", lat0 = 39, lat1 = 45) 
-gg <- gg + theme(panel.border = element_blank())
-gg <- gg + theme(panel.background = element_blank())
-gg <- gg + theme(axis.ticks = element_blank())
-gg2 <- gg + theme(axis.text = element_blank())+ ggtitle("Second student location")
-
-
-grid.arrange(gg1, gg2, ncol=1) ##graphs both
-```
-
-<img src="IR_files/figure-markdown_github/unnamed-chunk-3-1.png" style="display: block; margin: auto;" />
+![alt text](https://raw.githubusercontent.com/nietsnel/nietsnel.github.io/master/IR_files/figure-markdown_github/unnamed-chunk-1-1.png "Logo Title Text 1")
 
 Big Ten universities research funding
 -------------------------------------
@@ -119,8 +57,9 @@ cities <- read.csv(textConnection("
                                   "))
 
 leaflet(cities) %>% addTiles() %>% addCircles(lng = ~Long, lat = ~Lat, weight = 1, 
-    radius = ~sqrt(Pop) * 50, pop
- = ~City)
+    radius = ~sqrt(Pop) * 50, popup = ~City)
 ```
+
+COMING SOON!
 
 image here
