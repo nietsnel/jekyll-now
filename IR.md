@@ -1,11 +1,10 @@
 ---
 layout: page
-title: IR
+title: 
 permalink: /IR/
 ---
 
 
-R for institutional research
 ================
 Jordan Prendez
 2016-09-02
