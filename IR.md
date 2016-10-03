@@ -1,13 +1,7 @@
----
-layout: page
-title: 
-permalink: /IR/
----
-
-
+R for institutional research
 ================
 Jordan Prendez
-2016-09-02
+2016-10-03
 
 -   [Points](#points)
 -   [Statewide level](#statewide-level)
@@ -62,10 +56,14 @@ cities <- read.csv(textConnection("
                                   MichiganState,42.701430, -84.482236, 507061
                                   "))
 
-leaflet(cities) %>% addTiles() %>% addCircles(lng = ~Long, lat = ~Lat, weight = 1, 
-    radius = ~sqrt(Pop) * 50, popup = ~City)
+m <- leaflet(cities) %>% addTiles() %>% addCircles(lng = ~Long, lat = ~Lat, 
+    weight = 1, radius = ~sqrt(Pop) * 50, popup = ~City)
+
+print(m)
 ```
 
+<iframe width="850" height="630" src="http://rpubs.com/nietsnel/214772" frameborder="0" allowfullscreen="allowfullscreen">
+</iframe>
 COMING SOON!
 
 image here
