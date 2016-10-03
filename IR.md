@@ -1,6 +1,6 @@
 ---
 layout: page
-title: IR. 
+title: IR 
 permalink: /IR/
 published: true
 ---
@@ -31,6 +31,8 @@ m <- leaflet() %>%
 m  # Print the map
 ```
 
+<iframe width="850" height="630" src="http://rpubs.com/nietsnel/214781" frameborder="0" allowfullscreen="allowfullscreen">
+</iframe>
 COMING SOON!
 
 Graphic here.
@@ -72,9 +74,6 @@ print(m)
 
 <iframe width="850" height="630" src="http://rpubs.com/nietsnel/214772" frameborder="0" allowfullscreen="allowfullscreen">
 </iframe>
-
-
-
 COMING SOON!
 
 image here
