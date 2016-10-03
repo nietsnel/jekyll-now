@@ -1,3 +1,11 @@
+---
+layout: page
+title: IR. 
+permalink: /IR/
+published: true
+---
+
+
 R for institutional research
 ================
 Jordan Prendez
@@ -64,6 +72,9 @@ print(m)
 
 <iframe width="850" height="630" src="http://rpubs.com/nietsnel/214772" frameborder="0" allowfullscreen="allowfullscreen">
 </iframe>
+
+
+
 COMING SOON!
 
 image here
