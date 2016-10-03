@@ -6,17 +6,14 @@ published: true
 ---
 
 
-##other things here. 
 
 
 
  
- 
-<iframe width="800" height="450" src="https://edtest.shinyapps.io/Firstapp/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 
 
-<iframe width="1401" height="788" src="https://frissdemo.shinyapps.io/FrissDashboard/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe width="1200" height="630" src="https://gallery.shinyapps.io/boxplot/" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 
 
